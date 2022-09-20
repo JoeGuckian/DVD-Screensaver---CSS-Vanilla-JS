@@ -1,0 +1,50 @@
+:root {
+  --width: 256px;
+  --height: 130.5px;
+}
+
+.box {
+  background-color: black;
+  margin: auto auto;
+  height: 90vh;
+  width: 90vw;
+  position: relative;
+  box-shadow: inset 0 0 20px #155;
+  //border-radius: 20px;
+  border: 1px solid #111;
+  overflow: hidden;
+}
+
+.box svg {
+  display: block;
+  width: var(--width);
+  height: var(--height);
+  fill: white;
+  position: absolute;
+  animation: moveX 4s linear 0s infinite alternate,
+    moveY 6.8s linear 0s infinite alternate;
+}
+
+@keyframes moveX {
+  from {
+    left: calc(0%);
+  }
+  to {
+    left: calc(100% - var(--width));
+  }
+  /* 100% {
+    fill: red;
+  } */
+}
+
+@keyframes moveY {
+  from {
+    top: calc(0%);
+  }
+  to {
+    top: calc(100% - var(--height));
+  }
+  /* 100% {
+    fill: blue;
+  } */
+}
