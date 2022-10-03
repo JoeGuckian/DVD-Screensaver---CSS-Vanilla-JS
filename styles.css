@@ -32,9 +32,6 @@
   to {
     left: calc(100% - var(--width));
   }
-  /* 100% {
-    fill: red;
-  } */
 }
 
 @keyframes moveY {
@@ -44,7 +41,4 @@
   to {
     top: calc(100% - var(--height));
   }
-  /* 100% {
-    fill: blue;
-  } */
 }
